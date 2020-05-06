@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROJECT>
+    <COMPONENT-LIST>
+        <COMPONENT ID="5bce3f7f-12ed-449c-bcc5-abbae78d9adf" NAME="A05_Sourse_RandiPartModel">
+            <LAYOUT COMPONENTID="5bce3f7f-12ed-449c-bcc5-abbae78d9adf" LOCATIONX="120" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="a3a6f3ff-2dee-41c0-a2e5-4a1cbaffb1a0" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="681e53ab-5fe0-45b2-a007-dbbb03d8b686" PARAID="0" NAME="Length" ISFIXED="false" TIPSTRING="序列的个数：" VALUEEXP="512" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="864d401d-4457-41d2-a3c3-d269e8beba29" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="78cba575-31f6-4d1d-8fcc-7e2007341e86" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="2fdaa983-efdf-41d4-9bda-ea6cd6681d36" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="0fdee407-8f40-4679-8882-f26eea06193c" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="d96a9577-763c-4304-b237-56f5fb32aed1" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="7890730a-63c0-47ef-b1a2-6690067c864b" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="4fc4f4e8-4c8b-430a-925d-336a368bc82b" NAME="F13_ComUse_RelayPartModel">
+            <LAYOUT COMPONENTID="4fc4f4e8-4c8b-430a-925d-336a368bc82b" LOCATIONX="240" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="1d0fbd1b-0539-4df4-93ee-a4b8fff12ad2" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="8d1cbd7e-706d-4765-9e71-ac11c536dd20" PARAID="0" NAME="on" ISFIXED="false" TIPSTRING="高电平的截止点：" VALUEEXP="0.5" VISIBLE="true" UNIT="null" />
+                    <PARAMETER ID="d5848456-8484-4710-8ee9-90530d02c556" PARAID="0" NAME="off" ISFIXED="false" TIPSTRING="低电平的截止点：" VALUEEXP="0.49" VISIBLE="true" UNIT="null" />
+                    <PARAMETER ID="732591d1-b3c3-48d4-9786-da72d1121bed" PARAID="0" NAME="high" ISFIXED="false" TIPSTRING="输出的高电平值：" VALUEEXP="1" VISIBLE="true" UNIT="null" />
+                    <PARAMETER ID="b1657275-f157-4b53-b56d-a4e8cce9d621" PARAID="0" NAME="low" ISFIXED="false" TIPSTRING="输出的低电平值：" VALUEEXP="-1" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="a48b0f7b-3bb7-4d2e-9f0d-bf74b39a3294" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="d340a098-f257-4e38-87d2-57da77f2ec5e" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="312424d6-71e9-4880-9b57-9de1095adb4d" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="a7cd49cc-d071-4ca8-b27d-d7c8200e4ddd" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="dc9a53c5-81f0-4c13-ba1f-fe565b8f5cc5" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="5dfd0c9c-c4be-4e6c-8ea4-a44d7b880d30" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" NAME="F15_Multipath_FadingPartModel">
+            <LAYOUT COMPONENTID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" LOCATIONX="370" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="d9832a1a-ff90-42ab-8a96-f612c5baf9eb" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="1ba1370e-5478-43b0-8054-4aa36d4e8b7a" PARAID="0" NAME="h" ISFIXED="false" TIPSTRING="多径信道的冲激响应：" VALUEEXP="{0.02, 0.05, 0.1, -0.2, 1, -0.2, 0.1, 0.05, 0.02}" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="cf2be8fe-b1b6-4ceb-b2cc-1e0bfdbc699a" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="b6b5f9b6-7249-41cd-b51c-7751259d72f1" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="8b466c1d-c415-4cdc-ab68-c33a1b7af12b" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="f5b4da34-1c7c-478e-a962-da9b6387dd0a" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="f3296ae3-a59a-4752-bccb-a378539be61e" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="fb2c81b7-1e4f-435f-8f12-e9150bcc1165" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+            <LAYOUT COMPONENTID="5d38e606-ef18-4f12-87ac-2784d81dc005" LOCATIONX="490" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="ebe50373-2e30-4975-b6eb-d3da892be25c" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="3bf4a780-9ac1-4a29-93db-e9efcb387cf5" PARAID="0" NAME="h" ISFIXED="false" TIPSTRING="多径信道的冲激响应：" VALUEEXP="{0.02, 0.05, 0.1, -0.2, 1, -0.2, 0.1, 0.05, 0.02}" VISIBLE="true" UNIT="null" />
+                    <PARAMETER ID="d9a16d7c-18f9-4897-a507-077d77e63be7" PARAID="0" NAME="N" ISFIXED="false" TIPSTRING="均衡器的抽头数：" VALUEEXP="5" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="5d2a07ac-6d3f-4b6b-8fbf-0793e7b583da" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="013a5d9c-f8b5-4369-a4e4-50db819440a0" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="0d7b05cb-8e7c-4ede-8f5b-75fa74cd0000" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="6a1f5bf2-4c98-43b5-b90e-ec19f2756dc0" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="f81f3817-243f-4abe-9acc-9dbed526b10b" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="79e1471b-205b-4c21-bf78-28df30051ca3" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+            <LAYOUT COMPONENTID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" LOCATIONX="490" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="9e3dc08b-3cf8-429f-b3d7-682e823ca5a9" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="ff3340df-1864-424b-8959-8a5e31976acf" PARAID="0" NAME="width" ISFIXED="false" TIPSTRING="输出图片的宽" VALUEEXP="12" VISIBLE="false" UNIT="cm" />
+                    <PARAMETER ID="98eb00bb-4601-4bcf-9874-265d472d446b" PARAID="0" NAME="height" ISFIXED="false" TIPSTRING="输出图片的高" VALUEEXP="9.6" VISIBLE="false" UNIT="cm" />
+                </PARAMETER>
+                <PARAMETER ID="b84d5c38-0773-45ee-ac02-c6aa6c01f81c" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="0ebb8c4f-e1d9-4eb5-92d5-3a9e490e5783" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="55904b73-2fac-47ae-942a-f840c63fe649" PARAID="0" NAME="filedirectory" ISFIXED="false" TIPSTRING="目标数据文件的存放目录地址" VALUEEXP="C:\Users\LVCS\AppData\Local\Temp\rainier\ed933350-ee2c-4025-99d4-a6e8ca334ce2.png" VISIBLE="false" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="af05fea3-b82e-41c0-abf2-bb44e616f808" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="eca8d4fb-d7cb-4841-bb66-361d320385ac" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="99e7b981-bd9c-4801-8d41-832538c940e9" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="8e513619-0930-456a-b8b2-0f680e17a2b7" PARAID="0" NAME="color" ISFIXED="false" TIPSTRING="分布图的颜色：" VALUEEXP="蓝" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="c970c17f-6a40-4e6d-8c52-0fc6ce959146" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+            <LAYOUT COMPONENTID="62af4cc0-b3e3-4b38-8474-6fee04dac143" LOCATIONX="620" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="db628378-04a6-446a-9c7d-eb27973a51e2" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="ff1dd88c-bfbb-48ab-a52e-7f76e6a637ed" PARAID="0" NAME="width" ISFIXED="false" TIPSTRING="输出图片的宽" VALUEEXP="12" VISIBLE="false" UNIT="cm" />
+                    <PARAMETER ID="fd611211-edce-4645-9ff6-489ce9cd490c" PARAID="0" NAME="height" ISFIXED="false" TIPSTRING="输出图片的高" VALUEEXP="9.6" VISIBLE="false" UNIT="cm" />
+                </PARAMETER>
+                <PARAMETER ID="8fac296b-165d-4e99-a17a-cc016218d66f" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="6c62b5ec-663f-4514-b322-d1c63eb6f97c" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="b03d4598-2e80-4584-9d5f-ce0ba10aa273" PARAID="0" NAME="filedirectory" ISFIXED="false" TIPSTRING="目标数据文件的存放目录地址" VALUEEXP="C:\Users\LVCS\AppData\Local\Temp\rainier\fc563dfd-d26e-483c-bc8c-c6ab40c5f45b.png" VISIBLE="false" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="c0607e1e-922d-4328-a81c-8e49fafc5d5b" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="76b07a3e-35b2-4666-bd27-e9286246f962" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="d8c25679-580b-42da-b9e7-cabd3b9fb0e6" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="996cb46d-c6fe-4427-ac3a-a849922c46c8" PARAID="0" NAME="color" ISFIXED="false" TIPSTRING="分布图的颜色：" VALUEEXP="蓝" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="6dcc578a-2864-4476-a5d7-ffaa9f0b965a" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+            <LAYOUT COMPONENTID="ce5fed28-8780-4072-b4db-27fd944fcf9b" LOCATIONX="490" LOCATIONY="378" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="f7b97e5f-c651-4688-a5ff-21d435f47c53" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="417a68bd-8d49-4dae-a5b9-a7611c904467" PARAID="0" NAME="n" ISFIXED="false" TIPSTRING="每个轨迹的采样点数：" VALUEEXP="4" VISIBLE="true" UNIT="null" />
+                    <PARAMETER ID="721ab7ec-e47b-4217-90c2-d8ea0a45a027" PARAID="0" NAME="width" ISFIXED="false" TIPSTRING="输出图片的宽" VALUEEXP="12" VISIBLE="false" UNIT="cm" />
+                    <PARAMETER ID="1ba800e3-eff2-41dc-9451-a7707c9ca19b" PARAID="0" NAME="height" ISFIXED="false" TIPSTRING="输出图片的高" VALUEEXP="9.6" VISIBLE="false" UNIT="cm" />
+                </PARAMETER>
+                <PARAMETER ID="295e3fe1-85c7-4fb7-a57c-357ac28f4efd" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="de8889a9-b4f6-4dfb-992a-53f7d3055a98" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="13d71aaa-27e5-4776-9755-708a989b95d2" PARAID="0" NAME="filedirectory" ISFIXED="false" TIPSTRING="目标数据文件的存放目录地址" VALUEEXP="C:\Users\LVCS\AppData\Local\Temp\rainier\6d2ceb98-b3cd-4dcc-862d-7af7b51ba127.png" VISIBLE="false" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="9fccb238-e618-4e57-af74-2ab3050eb539" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="80ea0031-ffe2-4c6b-b694-7df4938aab87" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="423929b7-40ac-4f99-b3f8-8b6e9d1a1d39" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="6e7b2a44-a9fd-49ea-af47-1a826141ec17" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+            <LAYOUT COMPONENTID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" LOCATIONX="620" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="20d242e2-3003-410e-b7e8-fa16b226fee0" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="005740bc-5145-4df5-8022-d7991b2002aa" PARAID="0" NAME="n" ISFIXED="false" TIPSTRING="每个轨迹的采样点数：" VALUEEXP="4" VISIBLE="true" UNIT="null" />
+                    <PARAMETER ID="ba393e10-4e4a-40d6-92c6-a2f39ce6c5c5" PARAID="0" NAME="width" ISFIXED="false" TIPSTRING="输出图片的宽" VALUEEXP="12" VISIBLE="false" UNIT="cm" />
+                    <PARAMETER ID="8a3f742b-30d6-4a3a-8a1f-57d40690948a" PARAID="0" NAME="height" ISFIXED="false" TIPSTRING="输出图片的高" VALUEEXP="9.6" VISIBLE="false" UNIT="cm" />
+                </PARAMETER>
+                <PARAMETER ID="88f2bd07-9cb9-4bce-8785-c99c7228d376" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="a787fc8e-430b-4e59-b7bb-b4d6c236fc47" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="4190ab6d-6ff1-4115-9744-310e4d5530ac" PARAID="0" NAME="filedirectory" ISFIXED="false" TIPSTRING="目标数据文件的存放目录地址" VALUEEXP="C:\Users\LVCS\AppData\Local\Temp\rainier\392d6483-1232-4cba-b5cf-4d388fd8fd75.png" VISIBLE="false" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="94560b5b-8b69-4b6b-807b-3ee570be75c0" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="1e1efdfd-5e0d-4329-9823-7f52021b56a2" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="3fa837e6-a8bd-404f-85af-671d4fb5838b" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="b1f70a61-bac9-4565-81c5-1784210072b8" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+    </COMPONENT-LIST>
+    <CONNECTION-LIST>
+        <CONNECTION ID="046da159-975c-4cd3-9288-5b38d840690e" SOURCEPORTID="cd7db01b-3744-4e6a-903e-0cffaa8e300e" TARGETPORTID="in" SOURCECOMPONENTID="5bce3f7f-12ed-449c-bcc5-abbae78d9adf" TARGETCOMPONENTID="4fc4f4e8-4c8b-430a-925d-336a368bc82b">
+            <LINE LINETYPE="HORIZONTAL" STARTX="225" STARTY="240" ENDX="250" ENDY="240" />
+            <LINE LINETYPE="VERTICAL" STARTX="250" STARTY="240" ENDX="250" ENDY="240" />
+        </CONNECTION>
+        <CONNECTION ID="9eff678e-d228-4b04-9fba-cbe05e12ef6e" SOURCEPORTID="3566ec6b-1c69-430c-9035-431dbba86e47" TARGETPORTID="in" SOURCECOMPONENTID="4fc4f4e8-4c8b-430a-925d-336a368bc82b" TARGETCOMPONENTID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9">
+            <LINE LINETYPE="HORIZONTAL" STARTX="345" STARTY="240" ENDX="380" ENDY="240" />
+        </CONNECTION>
+        <CONNECTION ID="c46c12de-66e2-407c-9782-5c1461afe9b3" SOURCEPORTID="00de2565-3322-4843-a2e4-7628720795c3" TARGETPORTID="in" SOURCECOMPONENTID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" TARGETCOMPONENTID="5d38e606-ef18-4f12-87ac-2784d81dc005">
+            <LINE LINETYPE="HORIZONTAL" STARTX="475" STARTY="240" ENDX="500" ENDY="240" />
+            <LINE LINETYPE="VERTICAL" STARTX="500" STARTY="240" ENDX="500" ENDY="240" />
+        </CONNECTION>
+        <CONNECTION ID="e6a1361b-7aac-486e-9aa4-8c42d0f3434f" SOURCEPORTID="b2f6f789-d52a-41a3-af4e-c69fd9504696" TARGETPORTID="in" SOURCECOMPONENTID="5d38e606-ef18-4f12-87ac-2784d81dc005" TARGETCOMPONENTID="62af4cc0-b3e3-4b38-8474-6fee04dac143">
+            <LINE LINETYPE="HORIZONTAL" STARTX="595" STARTY="240" ENDX="630" ENDY="240" />
+        </CONNECTION>
+        <CONNECTION ID="9b975414-a86a-4bd5-8ed4-3228e44c461b" SOURCEPORTID="00de2565-3322-4843-a2e4-7628720795c3" TARGETPORTID="in" SOURCECOMPONENTID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" TARGETCOMPONENTID="f153c8dd-53ad-4ec0-b888-ed8780ca924a">
+            <LINE LINETYPE="VERTICAL" STARTX="475" STARTY="240" ENDX="475" ENDY="329" />
+            <LINE LINETYPE="HORIZONTAL" STARTX="475" STARTY="329" ENDX="500" ENDY="329" />
+        </CONNECTION>
+        <CONNECTION ID="9c34fbcc-04ed-41f2-802e-7e5de6f0ed01" SOURCEPORTID="00de2565-3322-4843-a2e4-7628720795c3" TARGETPORTID="in" SOURCECOMPONENTID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" TARGETCOMPONENTID="ce5fed28-8780-4072-b4db-27fd944fcf9b">
+            <LINE LINETYPE="VERTICAL" STARTX="475" STARTY="240" ENDX="475" ENDY="360" />
+            <LINE LINETYPE="HORIZONTAL" STARTX="475" STARTY="360" ENDX="500" ENDY="360" />
+            <LINE LINETYPE="VERTICAL" STARTX="500" STARTY="360" ENDX="500" ENDY="428" />
+        </CONNECTION>
+        <CONNECTION ID="0ee10d56-2416-4a56-944b-bf94de76eca8" SOURCEPORTID="b2f6f789-d52a-41a3-af4e-c69fd9504696" TARGETPORTID="in" SOURCECOMPONENTID="5d38e606-ef18-4f12-87ac-2784d81dc005" TARGETCOMPONENTID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e">
+            <LINE LINETYPE="HORIZONTAL" STARTX="595" STARTY="240" ENDX="614" ENDY="360" />
+            <LINE LINETYPE="VERTICAL" STARTX="614" STARTY="240" ENDX="614" ENDY="329" />
+            <LINE LINETYPE="HORIZONTAL" STARTX="614" STARTY="329" ENDX="630" ENDY="329" />
+        </CONNECTION>
+    </CONNECTION-LIST>
+    <EXPERIMENT-REPLAY-LIST EXPERIMENT-ID="c2f7e171-34f5-4ff5-8f56-6d621d114b7c" PAGE-NAME="实验台" TIMER="162">
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="1">
+            <COMPONENT ID="5bce3f7f-12ed-449c-bcc5-abbae78d9adf" NAME="A05_Sourse_RandiPartModel">
+                <LAYOUT LOCATIONX="120" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="2">
+            <COMPONENT ID="4fc4f4e8-4c8b-430a-925d-336a368bc82b" NAME="F13_ComUse_RelayPartModel">
+                <LAYOUT LOCATIONX="300" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="3">
+            <COMPONENT ID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" NAME="F15_Multipath_FadingPartModel">
+                <LAYOUT LOCATIONX="480" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="4">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="700" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="5">
+            <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="700" LOCATIONY="320" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="6">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="910" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="7">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="710" LOCATIONY="430" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="8">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="920" LOCATIONY="310" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="9">
+            <COMPONENT ID="5bce3f7f-12ed-449c-bcc5-abbae78d9adf" NAME="A05_Sourse_RandiPartModel">
+                <LAYOUT LOCATIONX="120" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="10">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="695" LOCATIONY="210" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="11">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="695" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="12">
+            <CONNECTION-MODEL ID="046da159-975c-4cd3-9288-5b38d840690e" SOURCEPORTID="cd7db01b-3744-4e6a-903e-0cffaa8e300e" TARGETPORTID="in" SOURCECOMPONENTID="5bce3f7f-12ed-449c-bcc5-abbae78d9adf" TARGETCOMPONENTID="4fc4f4e8-4c8b-430a-925d-336a368bc82b">
+                <LINE LINETYPE="HORIZONTAL" STARTX="225" STARTY="240" ENDX="310" ENDY="240" />
+                <LINE LINETYPE="VERTICAL" STARTX="310" STARTY="240" ENDX="310" ENDY="240" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="13">
+            <CONNECTION-MODEL ID="9eff678e-d228-4b04-9fba-cbe05e12ef6e" SOURCEPORTID="3566ec6b-1c69-430c-9035-431dbba86e47" TARGETPORTID="in" SOURCECOMPONENTID="4fc4f4e8-4c8b-430a-925d-336a368bc82b" TARGETCOMPONENTID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9">
+                <LINE LINETYPE="HORIZONTAL" STARTX="405" STARTY="240" ENDX="490" ENDY="240" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="14">
+            <CONNECTION-MODEL ID="c46c12de-66e2-407c-9782-5c1461afe9b3" SOURCEPORTID="00de2565-3322-4843-a2e4-7628720795c3" TARGETPORTID="in" SOURCECOMPONENTID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" TARGETCOMPONENTID="5d38e606-ef18-4f12-87ac-2784d81dc005">
+                <LINE LINETYPE="HORIZONTAL" STARTX="585" STARTY="240" ENDX="705" ENDY="240" />
+                <LINE LINETYPE="VERTICAL" STARTX="705" STARTY="240" ENDX="705" ENDY="240" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="15">
+            <CONNECTION-MODEL ID="e6a1361b-7aac-486e-9aa4-8c42d0f3434f" SOURCEPORTID="b2f6f789-d52a-41a3-af4e-c69fd9504696" TARGETPORTID="in" SOURCECOMPONENTID="5d38e606-ef18-4f12-87ac-2784d81dc005" TARGETCOMPONENTID="62af4cc0-b3e3-4b38-8474-6fee04dac143">
+                <LINE LINETYPE="HORIZONTAL" STARTX="800" STARTY="240" ENDX="920" ENDY="240" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="16">
+            <CONNECTION-MODEL ID="9b975414-a86a-4bd5-8ed4-3228e44c461b" SOURCEPORTID="00de2565-3322-4843-a2e4-7628720795c3" TARGETPORTID="in" SOURCECOMPONENTID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" TARGETCOMPONENTID="f153c8dd-53ad-4ec0-b888-ed8780ca924a">
+                <LINE LINETYPE="VERTICAL" STARTX="585" STARTY="240" ENDX="585" ENDY="370" />
+                <LINE LINETYPE="HORIZONTAL" STARTX="585" STARTY="370" ENDX="710" ENDY="370" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="17">
+            <CONNECTION-MODEL ID="9c34fbcc-04ed-41f2-802e-7e5de6f0ed01" SOURCEPORTID="00de2565-3322-4843-a2e4-7628720795c3" TARGETPORTID="in" SOURCECOMPONENTID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" TARGETCOMPONENTID="ce5fed28-8780-4072-b4db-27fd944fcf9b">
+                <LINE LINETYPE="VERTICAL" STARTX="585" STARTY="240" ENDX="585" ENDY="480" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="18">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8" SOURCEPORTID="b2f6f789-d52a-41a3-af4e-c69fd9504696" TARGETPORTID="in" SOURCECOMPONENTID="5d38e606-ef18-4f12-87ac-2784d81dc005" TARGETCOMPONENTID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e">
+                <LINE LINETYPE="HORIZONTAL" STARTX="800" STARTY="240" ENDX="930" ENDY="240" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="19">
+            <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="700" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="20">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="700" LOCATIONY="360" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="21">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="700" LOCATIONY="378" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="22">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="920" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="23">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="910" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="24">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="840" LOCATIONY="289" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="25">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="840" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="26">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="870" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="27">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="870" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="28">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="890" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="29">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="890" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="30">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="860" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="31">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="860" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="32">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="870" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="33">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="870" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAG-START" TIMER="34">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="864" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="35">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="863" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="36">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="862" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="37">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="861" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="38">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="860" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="39">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="859" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="40">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="858" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="41">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="857" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="42">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="856" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="43">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="855" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="44">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="854" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="45">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="853" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="46">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="852" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="47">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="841" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="48">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="840" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="49">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="839" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="50">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="838" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="51">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="837" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="52">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="836" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="53">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="835" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="54">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="834" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="55">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="833" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="56">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="832" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="57">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="831" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="58">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="830" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="59">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="829" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="60">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="828" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="61">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="827" LOCATION-Y="270" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="62">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="827" LOCATION-Y="269" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="63">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="850" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="64">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="850" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="65">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="820" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="66">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="670" LOCATIONY="378" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="67">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="820" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="68">
+            <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="670" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="69">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="660" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="70">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="670" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="71">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="610" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="72">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="760" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="73">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="610" LOCATIONY="378" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="74">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="760" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="75">
+            <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="610" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="76">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="600" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="77">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="750" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="78">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="600" LOCATIONY="378" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="79">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="750" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="80">
+            <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="600" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="81">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="730" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="82">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="730" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="83">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="550" LOCATIONY="388" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="84">
+            <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="550" LOCATIONY="289" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="85">
+            <COMPONENT ID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" NAME="F15_Multipath_FadingPartModel">
+                <LAYOUT LOCATIONX="430" LOCATIONY="210" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="86">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="550" LOCATIONY="210" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="87">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="680" LOCATIONY="289" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="88">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="680" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="89">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="550" LOCATIONY="368" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="90">
+            <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="550" LOCATIONY="269" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="91">
+            <COMPONENT ID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" NAME="F15_Multipath_FadingPartModel">
+                <LAYOUT LOCATIONX="430" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="92">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="550" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="93">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="680" LOCATIONY="269" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="94">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="680" LOCATIONY="180" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="95">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="550" LOCATIONY="378" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="96">
+            <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="550" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="97">
+            <COMPONENT ID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" NAME="F15_Multipath_FadingPartModel">
+                <LAYOUT LOCATIONX="430" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="98">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="550" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="99">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="680" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="100">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="680" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAG-START" TIMER="101">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="707" LOCATION-Y="262" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAG-START" TIMER="102">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="709" LOCATION-Y="279" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="103">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="708" LOCATION-Y="279" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="104">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="707" LOCATION-Y="279" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="105">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="706" LOCATION-Y="279" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="106">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="706" LOCATION-Y="278" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="107">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="705" LOCATION-Y="278" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="108">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="704" LOCATION-Y="278" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="109">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="703" LOCATION-Y="278" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="110">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="702" LOCATION-Y="278" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="111">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="701" LOCATION-Y="278" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="112">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="700" LOCATION-Y="278" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="113">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="700" LOCATION-Y="277" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="114">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="699" LOCATION-Y="277" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="115">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="698" LOCATION-Y="277" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="116">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="697" LOCATION-Y="277" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="117">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="696" LOCATION-Y="277" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="118">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="696" LOCATION-Y="276" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="119">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="276" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="120">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="276" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="121">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="276" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="122">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="275" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="123">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="275" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="124">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="275" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="125">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="275" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="126">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="274" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="127">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="274" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="128">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="274" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="129">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="274" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="130">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="274" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="131">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="273" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="132">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="690" LOCATION-Y="273" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="133">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="684" LOCATION-Y="273" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="134">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="683" LOCATION-Y="273" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="135">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="682" LOCATION-Y="273" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="136">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="681" LOCATION-Y="273" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="137">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="681" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="138">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="680" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="139">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="679" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="140">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="678" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="141">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="677" LOCATION-Y="272" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="142">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="677" LOCATION-Y="271" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="143">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="676" LOCATION-Y="271" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="144">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="675" LOCATION-Y="271" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CONNECTION-DRAGING" TIMER="145">
+            <CONNECTION-MODEL ID="0ee10d56-2416-4a56-944b-bf94de76eca8">
+                <POINT LOCATION_X="674" LOCATION-Y="271" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="146">
+            <COMPONENT ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="490" LOCATIONY="378" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="147">
+            <COMPONENT ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="490" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="148">
+            <COMPONENT ID="4fc4f4e8-4c8b-430a-925d-336a368bc82b" NAME="F13_ComUse_RelayPartModel">
+                <LAYOUT LOCATIONX="240" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="149">
+            <COMPONENT ID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" NAME="F15_Multipath_FadingPartModel">
+                <LAYOUT LOCATIONX="370" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="150">
+            <COMPONENT ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel">
+                <LAYOUT LOCATIONX="490" LOCATIONY="200" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="151">
+            <COMPONENT ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel">
+                <LAYOUT LOCATIONX="620" LOCATIONY="279" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="152">
+            <COMPONENT ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel">
+                <LAYOUT LOCATIONX="620" LOCATIONY="190" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="153">
+            <COMPONENT-MODEL ID="5bce3f7f-12ed-449c-bcc5-abbae78d9adf" NAME="A05_Sourse_RandiPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="154">
+            <COMPONENT-MODEL ID="4fc4f4e8-4c8b-430a-925d-336a368bc82b" NAME="F13_ComUse_RelayPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="155">
+            <COMPONENT-MODEL ID="d8334bbb-8e25-4045-b6fc-bdede92cf0e9" NAME="F15_Multipath_FadingPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="156">
+            <COMPONENT-MODEL ID="5d38e606-ef18-4f12-87ac-2784d81dc005" NAME="F16_Multipath_ZeroPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="157">
+            <COMPONENT-MODEL ID="f153c8dd-53ad-4ec0-b888-ed8780ca924a" NAME="G03_Draw_DistributionPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="158">
+            <COMPONENT-MODEL ID="62af4cc0-b3e3-4b38-8474-6fee04dac143" NAME="G03_Draw_DistributionPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="159">
+            <COMPONENT-MODEL ID="ce5fed28-8780-4072-b4db-27fd944fcf9b" NAME="G08_Draw_EYEdiagramPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="160">
+            <COMPONENT-MODEL ID="9cffe846-902f-4ba1-b74e-1dd4fe589f8e" NAME="G08_Draw_EYEdiagramPartModel" />
+        </TRACER>
+    </EXPERIMENT-REPLAY-LIST>
+</PROJECT>
+

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROJECT>
+    <COMPONENT-LIST>
+        <COMPONENT ID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" NAME="A01_Source_CosinPartModel">
+            <LAYOUT COMPONENTID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" LOCATIONX="220" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="9dc623ae-4385-48bc-8948-1140c42aa368" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="cbc5045b-dd5d-48b5-9549-0dbcf3f41f82" PARAID="0" NAME="A" ISFIXED="false" TIPSTRING="信号的最大幅度值：" VALUEEXP="1" VISIBLE="true" UNIT="null" />
+                    <PARAMETER ID="ffa1d8b8-8277-40dd-abd1-700839e5db7e" PARAID="0" NAME="freq" ISFIXED="false" TIPSTRING="信号的频率：" VALUEEXP="2" VISIBLE="true" UNIT="Hz" />
+                    <PARAMETER ID="037adf8f-7a4c-41ed-9870-b54e526ed6da" PARAID="0" NAME="t" ISFIXED="false" TIPSTRING="信号的终止时间：" VALUEEXP="1" VISIBLE="true" UNIT="s" />
+                    <PARAMETER ID="56cfb662-08c3-41ac-b982-68e16f04ceb5" PARAID="0" NAME="phase" ISFIXED="false" TIPSTRING="信号的初始相位：" VALUEEXP="0" VISIBLE="true" UNIT="弧度" />
+                    <PARAMETER ID="9ddfbfe1-d0ef-4ae9-9863-2b1cdce744ff" PARAID="0" NAME="fs" ISFIXED="false" TIPSTRING="信号的采样频率：" VALUEEXP="1000" VISIBLE="true" UNIT="Hz" />
+                </PARAMETER>
+                <PARAMETER ID="a1641738-4a75-4f6c-ab1f-2594f1e876fe" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="ae9ae444-7291-4fbd-a86e-93dc2453eecc" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="7f32779a-5b3b-4381-89ae-e662e941c7e1" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="fd022f0b-8075-4a15-be58-66d84d3a8330" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="13696187-ce8e-46c8-bc0e-5565ef6de992" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="422cf72f-da12-40c0-97db-eef4331ffcda" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel">
+            <LAYOUT COMPONENTID="07294bb1-ce37-4bc9-a878-b370dd41aa43" LOCATIONX="350" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="533dc6dd-f1a6-4e58-9912-cc37918b641e" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="ac5ba579-b887-499d-855c-4bfd59b43e64" PARAID="0" NAME="freq" ISFIXED="false" TIPSTRING="采样频率：" VALUEEXP="20" VISIBLE="true" UNIT="Hz" />
+                    <PARAMETER ID="692bb87e-54a5-4346-9e75-ac6ce56c4a11" PARAID="0" NAME="t" ISFIXED="false" TIPSTRING="采样结束时间：" VALUEEXP="1" VISIBLE="true" UNIT="s" />
+                </PARAMETER>
+                <PARAMETER ID="454f7b0e-a03a-413c-824b-572648f1fe52" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="a51cfe66-aa39-4023-9db4-d111c8039b8d" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="e77bc587-d136-4724-99ed-9340de3c3235" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="aeac0f27-36f6-4bef-af96-940669e87f12" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="22336e08-ba3d-496a-b29b-786270f2b287" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="4ff80c7a-c69d-4f3f-8532-6864991cdb7d" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="e5d57f86-3239-470c-b6a7-524e40d07642" NAME="E01_SourceCoding_PCMQuantizPartModel">
+            <LAYOUT COMPONENTID="e5d57f86-3239-470c-b6a7-524e40d07642" LOCATIONX="480" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="f83f973d-643e-4c66-a4ce-08846c50c183" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="9628ff4d-a4c1-46d8-a30b-c2f67e783283" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="ce0aab2e-9747-429d-96ad-27094324344d" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="5c76b77d-bad6-43df-950d-16c84c0e0992" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="79b2d9a0-bd9b-40e6-a0c1-9c7aaa0fd288" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="113c28e9-1bdf-443c-bc5f-d5e59e4ce33a" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="47006656-92f3-46b5-bd70-231da53b01bc" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="9def354a-2619-46b2-9195-540b19c51b43" NAME="E02_SourceCoding_PCMCodingPartModel">
+            <LAYOUT COMPONENTID="9def354a-2619-46b2-9195-540b19c51b43" LOCATIONX="620" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="599f4e70-bac2-4a01-8f30-d36de15b44cb" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="482f4375-7299-47ae-9067-3c615ad58c26" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="19e61463-d96c-49d2-a102-3cc3c6bc3e23" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="670bdc5b-1a92-4149-a626-f77129728015" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="c92a657b-4631-4a45-b269-93f8c5f5b3ac" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="9da0073d-56ab-459a-999d-0dde02c31316" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="05b07e55-166d-4697-9452-8cf0c2eb1c20" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="8f502f74-ba0a-4398-8578-5c4d90947008" NAME="E03_SourceCoding_PCMDecodingPartModel">
+            <LAYOUT COMPONENTID="8f502f74-ba0a-4398-8578-5c4d90947008" LOCATIONX="760" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="1a6dad0c-4e20-48db-b784-43c6ec7fd6bc" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="3c5a2112-7935-4c21-a085-cf6c9f012465" PARAID="0" NAME="A" ISFIXED="false" TIPSTRING="信源的最大幅值：" VALUEEXP="1" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="8c0135a0-6c6e-4713-a11d-79746b715f26" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="ff3dc421-e200-4ae6-beb6-585d97282e74" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="4bff0293-77fb-4653-9420-5a3f37e5ab1e" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="97aac634-7fee-47f3-86ff-745caec8ccb4" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="4359d068-e290-45b0-9d40-820edc06239a" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="01afebd8-aade-46f2-a418-ba0ccc5c50f5" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="a1203039-f2b4-4eaf-a8cc-8c1a5002201c" NAME="G02_Draw_PlotPartModel">
+            <LAYOUT COMPONENTID="a1203039-f2b4-4eaf-a8cc-8c1a5002201c" LOCATIONX="350" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="bf69d2ac-201e-473d-9d11-de1094bfe2ee" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="7a102d47-f058-447d-ac20-64754c54768b" PARAID="0" NAME="width" ISFIXED="false" TIPSTRING="输出图片的宽" VALUEEXP="12" VISIBLE="false" UNIT="cm" />
+                    <PARAMETER ID="dc10e527-2c0e-413c-9a76-928037c2c506" PARAID="0" NAME="height" ISFIXED="false" TIPSTRING="输出图片的高" VALUEEXP="9.6" VISIBLE="false" UNIT="cm" />
+                </PARAMETER>
+                <PARAMETER ID="a6934359-62f6-4cb4-b4b1-eb8265e0180c" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="846315d8-9f09-436f-b5d7-e5d927f64bb1" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="c8e91b19-ef6e-4c68-b1d9-b0c0d1173495" PARAID="0" NAME="filedirectory" ISFIXED="false" TIPSTRING="目标数据文件的存放目录地址" VALUEEXP="C:\Users\LVCS\AppData\Local\Temp\rainier\949a1852-a768-4c27-9dc1-18c3a0a1e608.png" VISIBLE="false" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="94a1d3c1-0d13-405c-9844-5c7f064f262c" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="c77909c6-c15e-43a3-ba3f-685eca9c0148" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="31435820-d183-4a14-b24b-b799c3650639" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="63178a05-4e10-4b72-9a3e-1138d48625e2" PARAID="0" NAME="color" ISFIXED="false" TIPSTRING="波形的颜色：" VALUEEXP="蓝" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="4e350849-f749-4828-a895-77d0ed19e414" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c" NAME="G04_Draw_StemPartModel">
+            <LAYOUT COMPONENTID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c" LOCATIONX="480" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="7e625245-3e87-427b-8a6c-69b017b18ef1" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="95170d1f-85f6-45e4-b199-b7baa5107bfb" PARAID="0" NAME="width" ISFIXED="false" TIPSTRING="输出图片的宽" VALUEEXP="12" VISIBLE="false" UNIT="cm" />
+                    <PARAMETER ID="a5438daf-19e6-4136-9e61-9af198e5b19e" PARAID="0" NAME="height" ISFIXED="false" TIPSTRING="输出图片的高" VALUEEXP="9.6" VISIBLE="false" UNIT="cm" />
+                </PARAMETER>
+                <PARAMETER ID="e577a8fa-b4bb-430c-aba1-6d996fa09cf2" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="0744e944-9b38-473c-857f-7761606480dc" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="f789e155-aeab-4e9b-bd31-8871370b11f3" PARAID="0" NAME="filedirectory" ISFIXED="false" TIPSTRING="目标数据文件的存放目录地址" VALUEEXP="C:\Users\LVCS\AppData\Local\Temp\rainier\9fe1a503-ee9b-41ff-82ce-3fa0118748bd.png" VISIBLE="false" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="2df95e0d-f130-4201-a82b-3eb33f549a2e" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="aace9598-d90a-4247-a32e-c23c2b2d107e" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="b08278b7-b85c-4edd-b570-3016642e9aac" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="85158d79-8053-4cc5-ba9f-6b1b501aa122" PARAID="0" NAME="color" ISFIXED="false" TIPSTRING="针状图的颜色：" VALUEEXP="绿" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="0551d410-ad70-4621-89ea-0a1824e8811c" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="4d709f9f-d96d-4ba7-9d40-858cea692cee" NAME="G04_Draw_StemPartModel">
+            <LAYOUT COMPONENTID="4d709f9f-d96d-4ba7-9d40-858cea692cee" LOCATIONX="620" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="83e79853-bc8a-4744-b882-937c3a8e4d62" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="d7941156-1aff-4e3e-ac5d-9e93b7a88c97" PARAID="0" NAME="width" ISFIXED="false" TIPSTRING="输出图片的宽" VALUEEXP="12" VISIBLE="false" UNIT="cm" />
+                    <PARAMETER ID="6ffc501e-a1ba-4ac1-a8ee-63e86a2bf595" PARAID="0" NAME="height" ISFIXED="false" TIPSTRING="输出图片的高" VALUEEXP="9.6" VISIBLE="false" UNIT="cm" />
+                </PARAMETER>
+                <PARAMETER ID="beac5502-c910-417f-8271-0f21cce969b9" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="c3d935ef-0dc1-42e0-81ca-6bf53d2ad2d8" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="84c0d99b-2043-4bf8-9188-93b7317114f6" PARAID="0" NAME="filedirectory" ISFIXED="false" TIPSTRING="目标数据文件的存放目录地址" VALUEEXP="C:\Users\LVCS\AppData\Local\Temp\rainier\352a6f79-9707-49fd-854c-014a9a8d4c22.png" VISIBLE="false" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="b9707ed2-2f71-4fcb-b14f-1eec8a660d9c" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="e75a0483-4c3f-4068-a188-dddc341dc826" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="468cd6b7-b5e5-4a58-a34e-2f3dcdc64567" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="51d214e6-77a9-4741-b61a-cd3ff0b48f76" PARAID="0" NAME="color" ISFIXED="false" TIPSTRING="针状图的颜色：" VALUEEXP="绿" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="09b3eb22-72ab-44bb-89f4-9d38ca92de42" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="5e5dfc87-e48f-465b-a223-8ccc2739afb5" NAME="G04_Draw_StemPartModel">
+            <LAYOUT COMPONENTID="5e5dfc87-e48f-465b-a223-8ccc2739afb5" LOCATIONX="750" LOCATIONY="329" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="dbcf7f1c-06b2-4c69-b12e-8a1f0de94294" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="61bc39e3-50f2-401e-9a83-b2aa74753542" PARAID="0" NAME="width" ISFIXED="false" TIPSTRING="输出图片的宽" VALUEEXP="12" VISIBLE="false" UNIT="cm" />
+                    <PARAMETER ID="ed7d3877-8c27-47cb-9421-c92e6f32ade2" PARAID="0" NAME="height" ISFIXED="false" TIPSTRING="输出图片的高" VALUEEXP="9.6" VISIBLE="false" UNIT="cm" />
+                </PARAMETER>
+                <PARAMETER ID="b5306a6b-2991-4740-ada3-d26d4a6e19fb" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="d9b57a20-56dd-4cf8-b2b6-35a2b133289c" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="9405bdb5-d216-4cfe-ad00-527e8e86f7d7" PARAID="0" NAME="filedirectory" ISFIXED="false" TIPSTRING="目标数据文件的存放目录地址" VALUEEXP="C:\Users\LVCS\AppData\Local\Temp\rainier\0ae3beb3-7b00-4766-b430-747f0c6e272d.png" VISIBLE="false" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="20e070ff-862a-48f0-adf7-364823c0b451" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="d9af1e3b-2733-4851-b9f3-afd823779e34" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="76095df5-9a09-419e-b8c9-4188747b0856" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="1e352ffc-8ad6-4335-b34b-93335361fab2" PARAID="0" NAME="color" ISFIXED="false" TIPSTRING="针状图的颜色：" VALUEEXP="绿" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="35c353ad-7432-40ab-8f94-381f38343c39" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+        <COMPONENT ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel">
+            <LAYOUT COMPONENTID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" LOCATIONX="890" LOCATIONY="230" DIRECTION="direction right" ZOOM="1.0" />
+            <ROOT-CONTAINER-PARAMETER>
+                <PARAMETER ID="61b2d632-d95e-451d-80de-dfb171f41f1d" PARAID="0" NAME="数字参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="ef0afdbd-2e5b-418a-8f98-c581d4e7b507" PARAID="0" NAME="width" ISFIXED="false" TIPSTRING="输出图片的宽" VALUEEXP="12" VISIBLE="false" UNIT="cm" />
+                    <PARAMETER ID="82eb61dc-ebe4-4ca3-a022-1667cf76a2c5" PARAID="0" NAME="height" ISFIXED="false" TIPSTRING="输出图片的高" VALUEEXP="9.6" VISIBLE="false" UNIT="cm" />
+                </PARAMETER>
+                <PARAMETER ID="4d7bef5d-c75b-41a7-950c-ab498a74b6fa" PARAID="0" NAME="字符串参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="5a0421a0-76da-43ba-8baf-f1357c4cf9b1" PARAID="0" NAME="路径参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="30c5b7d3-7c38-45b7-baf0-9aafcae9ec7a" PARAID="0" NAME="filedirectory" ISFIXED="false" TIPSTRING="目标数据文件的存放目录地址" VALUEEXP="C:\Users\LVCS\AppData\Local\Temp\rainier\0acc58e5-86e6-45e0-977d-54f225ac4b75.png" VISIBLE="false" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="86614742-e9e9-4719-8807-a8386d6e65b9" PARAID="0" NAME="布尔参数" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="096f79b0-c919-477d-8427-6b7eaff298cf" PARAID="0" NAME="单项选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+                <PARAMETER ID="c412c787-9cad-47ec-a89a-f27eba4eac2e" PARAID="0" NAME="下拉列表框选择" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null">
+                    <PARAMETER ID="40fe9b11-7b57-4b29-b805-0f3115d3b013" PARAID="0" NAME="color" ISFIXED="false" TIPSTRING="针状图的颜色：" VALUEEXP="绿" VISIBLE="true" UNIT="null" />
+                </PARAMETER>
+                <PARAMETER ID="0cd68b3e-d93a-48ed-9e37-0c6cf3df7b62" PARAID="0" NAME="选择并设置值" ISFIXED="false" TIPSTRING="null" VALUEEXP="null" VISIBLE="true" UNIT="null" />
+            </ROOT-CONTAINER-PARAMETER>
+        </COMPONENT>
+    </COMPONENT-LIST>
+    <CONNECTION-LIST>
+        <CONNECTION ID="404cc07d-b228-4f8e-b98d-000daf14a557" SOURCEPORTID="94161c26-ced0-4c3e-933c-04e8124aa4a3" TARGETPORTID="in" SOURCECOMPONENTID="8f502f74-ba0a-4398-8578-5c4d90947008" TARGETCOMPONENTID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5">
+            <LINE LINETYPE="HORIZONTAL" STARTX="865" STARTY="280" ENDX="900" ENDY="280" />
+        </CONNECTION>
+        <CONNECTION ID="eede7844-af6b-4ca7-b134-f2437ba47c9c" SOURCEPORTID="52c41dce-be3d-488c-afd6-c0069b627a73" TARGETPORTID="in" SOURCECOMPONENTID="9def354a-2619-46b2-9195-540b19c51b43" TARGETCOMPONENTID="5e5dfc87-e48f-465b-a223-8ccc2739afb5">
+            <LINE LINETYPE="VERTICAL" STARTX="725" STARTY="280" ENDX="725" ENDY="329" />
+            <LINE LINETYPE="HORIZONTAL" STARTX="725" STARTY="329" ENDX="760" ENDY="329" />
+            <LINE LINETYPE="VERTICAL" STARTX="760" STARTY="329" ENDX="760" ENDY="379" />
+        </CONNECTION>
+        <CONNECTION ID="a832213c-8a40-4d30-81d2-522a95c9a4e5" SOURCEPORTID="f1adf328-bde2-4a47-9305-1c80b58ce3bf" TARGETPORTID="in" SOURCECOMPONENTID="e5d57f86-3239-470c-b6a7-524e40d07642" TARGETCOMPONENTID="4d709f9f-d96d-4ba7-9d40-858cea692cee">
+            <LINE LINETYPE="VERTICAL" STARTX="585" STARTY="280" ENDX="585" ENDY="335" />
+            <LINE LINETYPE="HORIZONTAL" STARTX="585" STARTY="335" ENDX="630" ENDY="335" />
+            <LINE LINETYPE="VERTICAL" STARTX="630" STARTY="335" ENDX="630" ENDY="390" />
+        </CONNECTION>
+        <CONNECTION ID="c417f805-b237-49d1-b065-a49ac1f3b9eb" SOURCEPORTID="eecee05b-c65c-4b9b-ad85-46255c4ebaa3" TARGETPORTID="in" SOURCECOMPONENTID="07294bb1-ce37-4bc9-a878-b370dd41aa43" TARGETCOMPONENTID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c">
+            <LINE LINETYPE="VERTICAL" STARTX="455" STARTY="280" ENDX="455" ENDY="335" />
+            <LINE LINETYPE="HORIZONTAL" STARTX="455" STARTY="335" ENDX="490" ENDY="335" />
+            <LINE LINETYPE="VERTICAL" STARTX="490" STARTY="335" ENDX="490" ENDY="390" />
+        </CONNECTION>
+        <CONNECTION ID="f7983fd2-0e0c-49ec-a3e4-43ac7672cd40" SOURCEPORTID="a92cba05-9af5-4898-813c-3bc6987062de" TARGETPORTID="in" SOURCECOMPONENTID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" TARGETCOMPONENTID="a1203039-f2b4-4eaf-a8cc-8c1a5002201c">
+            <LINE LINETYPE="VERTICAL" STARTX="325" STARTY="280" ENDX="325" ENDY="335" />
+            <LINE LINETYPE="HORIZONTAL" STARTX="325" STARTY="335" ENDX="360" ENDY="335" />
+            <LINE LINETYPE="VERTICAL" STARTX="360" STARTY="335" ENDX="360" ENDY="390" />
+        </CONNECTION>
+        <CONNECTION ID="4b5523a1-cc77-423f-80bd-281f246e98e4" SOURCEPORTID="52c41dce-be3d-488c-afd6-c0069b627a73" TARGETPORTID="in" SOURCECOMPONENTID="9def354a-2619-46b2-9195-540b19c51b43" TARGETCOMPONENTID="8f502f74-ba0a-4398-8578-5c4d90947008">
+            <LINE LINETYPE="HORIZONTAL" STARTX="725" STARTY="280" ENDX="770" ENDY="280" />
+        </CONNECTION>
+        <CONNECTION ID="34b6fa4a-fba2-41e4-b32a-5d8c8ccaeb44" SOURCEPORTID="f1adf328-bde2-4a47-9305-1c80b58ce3bf" TARGETPORTID="in" SOURCECOMPONENTID="e5d57f86-3239-470c-b6a7-524e40d07642" TARGETCOMPONENTID="9def354a-2619-46b2-9195-540b19c51b43">
+            <LINE LINETYPE="HORIZONTAL" STARTX="585" STARTY="280" ENDX="630" ENDY="280" />
+        </CONNECTION>
+        <CONNECTION ID="f940bc05-50a7-43fb-8243-c8ba067998c7" SOURCEPORTID="eecee05b-c65c-4b9b-ad85-46255c4ebaa3" TARGETPORTID="in" SOURCECOMPONENTID="07294bb1-ce37-4bc9-a878-b370dd41aa43" TARGETCOMPONENTID="e5d57f86-3239-470c-b6a7-524e40d07642">
+            <LINE LINETYPE="HORIZONTAL" STARTX="455" STARTY="280" ENDX="490" ENDY="280" />
+        </CONNECTION>
+        <CONNECTION ID="eddaa8f4-2dc8-46c2-9219-c6fedc26312f" SOURCEPORTID="a92cba05-9af5-4898-813c-3bc6987062de" TARGETPORTID="in" SOURCECOMPONENTID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" TARGETCOMPONENTID="07294bb1-ce37-4bc9-a878-b370dd41aa43">
+            <LINE LINETYPE="HORIZONTAL" STARTX="325" STARTY="280" ENDX="360" ENDY="280" />
+            <LINE LINETYPE="VERTICAL" STARTX="360" STARTY="280" ENDX="360" ENDY="280" />
+        </CONNECTION>
+    </CONNECTION-LIST>
+    <EXPERIMENT-REPLAY-LIST EXPERIMENT-ID="0bc5529f-bcd5-460f-b99b-54b987db9b07" PAGE-NAME="实验台" TIMER="75">
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="1">
+            <COMPONENT ID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" NAME="A01_Source_CosinPartModel">
+                <LAYOUT LOCATIONX="230" LOCATIONY="260" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="2">
+            <COMPONENT ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel">
+                <LAYOUT LOCATIONX="430" LOCATIONY="280" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="3">
+            <COMPONENT ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel">
+                <LAYOUT LOCATIONX="400" LOCATIONY="270" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="4">
+            <COMPONENT ID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" NAME="A01_Source_CosinPartModel">
+                <LAYOUT LOCATIONX="220" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="5">
+            <COMPONENT ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel">
+                <LAYOUT LOCATIONX="380" LOCATIONY="250" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="6">
+            <COMPONENT ID="e5d57f86-3239-470c-b6a7-524e40d07642" NAME="E01_SourceCoding_PCMQuantizPartModel">
+                <LAYOUT LOCATIONX="610" LOCATIONY="270" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="7">
+            <COMPONENT ID="e5d57f86-3239-470c-b6a7-524e40d07642" NAME="E01_SourceCoding_PCMQuantizPartModel">
+                <LAYOUT LOCATIONX="560" LOCATIONY="250" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="8">
+            <COMPONENT ID="9def354a-2619-46b2-9195-540b19c51b43" NAME="E02_SourceCoding_PCMCodingPartModel">
+                <LAYOUT LOCATIONX="740" LOCATIONY="260" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="9">
+            <COMPONENT ID="8f502f74-ba0a-4398-8578-5c4d90947008" NAME="E03_SourceCoding_PCMDecodingPartModel">
+                <LAYOUT LOCATIONX="920" LOCATIONY="260" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="10">
+            <COMPONENT ID="a1203039-f2b4-4eaf-a8cc-8c1a5002201c" NAME="G02_Draw_PlotPartModel">
+                <LAYOUT LOCATIONX="270" LOCATIONY="380" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="11">
+            <COMPONENT ID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="470" LOCATIONY="380" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="12">
+            <COMPONENT ID="4d709f9f-d96d-4ba7-9d40-858cea692cee" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="660" LOCATIONY="390" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="13">
+            <COMPONENT ID="5e5dfc87-e48f-465b-a223-8ccc2739afb5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="860" LOCATIONY="380" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-COMPONENT" TIMER="14">
+            <COMPONENT ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="1100" LOCATIONY="280" DIRECTION="direction right" ZOOM="1.0" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="15">
+            <COMPONENT ID="a1203039-f2b4-4eaf-a8cc-8c1a5002201c" NAME="G02_Draw_PlotPartModel">
+                <LAYOUT LOCATIONX="300" LOCATIONY="380" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="16">
+            <COMPONENT ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel">
+                <LAYOUT LOCATIONX="380" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="17">
+            <COMPONENT ID="e5d57f86-3239-470c-b6a7-524e40d07642" NAME="E01_SourceCoding_PCMQuantizPartModel">
+                <LAYOUT LOCATIONX="560" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="18">
+            <COMPONENT ID="9def354a-2619-46b2-9195-540b19c51b43" NAME="E02_SourceCoding_PCMCodingPartModel">
+                <LAYOUT LOCATIONX="740" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="19">
+            <COMPONENT ID="8f502f74-ba0a-4398-8578-5c4d90947008" NAME="E03_SourceCoding_PCMDecodingPartModel">
+                <LAYOUT LOCATIONX="920" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="20">
+            <COMPONENT ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="1090" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="21">
+            <COMPONENT ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="1090" LOCATIONY="230" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="22">
+            <CONNECTION-MODEL ID="404cc07d-b228-4f8e-b98d-000daf14a557" SOURCEPORTID="94161c26-ced0-4c3e-933c-04e8124aa4a3" TARGETPORTID="in" SOURCECOMPONENTID="8f502f74-ba0a-4398-8578-5c4d90947008" TARGETCOMPONENTID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5">
+                <LINE LINETYPE="HORIZONTAL" STARTX="1025" STARTY="280" ENDX="1100" ENDY="280" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="23">
+            <COMPONENT ID="5e5dfc87-e48f-465b-a223-8ccc2739afb5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="870" LOCATIONY="329" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="24">
+            <CONNECTION-MODEL ID="eede7844-af6b-4ca7-b134-f2437ba47c9c" SOURCEPORTID="52c41dce-be3d-488c-afd6-c0069b627a73" TARGETPORTID="in" SOURCECOMPONENTID="9def354a-2619-46b2-9195-540b19c51b43" TARGETCOMPONENTID="5e5dfc87-e48f-465b-a223-8ccc2739afb5">
+                <LINE LINETYPE="VERTICAL" STARTX="845" STARTY="280" ENDX="845" ENDY="379" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="25">
+            <COMPONENT ID="4d709f9f-d96d-4ba7-9d40-858cea692cee" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="690" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="26">
+            <COMPONENT ID="4d709f9f-d96d-4ba7-9d40-858cea692cee" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="700" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="27">
+            <CONNECTION-MODEL ID="a832213c-8a40-4d30-81d2-522a95c9a4e5" SOURCEPORTID="f1adf328-bde2-4a47-9305-1c80b58ce3bf" TARGETPORTID="in" SOURCECOMPONENTID="e5d57f86-3239-470c-b6a7-524e40d07642" TARGETCOMPONENTID="4d709f9f-d96d-4ba7-9d40-858cea692cee">
+                <LINE LINETYPE="VERTICAL" STARTX="665" STARTY="280" ENDX="665" ENDY="390" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="28">
+            <COMPONENT ID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="530" LOCATIONY="350" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="29">
+            <COMPONENT ID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="520" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="30">
+            <COMPONENT ID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="530" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="31">
+            <CONNECTION-MODEL ID="c417f805-b237-49d1-b065-a49ac1f3b9eb" SOURCEPORTID="eecee05b-c65c-4b9b-ad85-46255c4ebaa3" TARGETPORTID="in" SOURCECOMPONENTID="07294bb1-ce37-4bc9-a878-b370dd41aa43" TARGETCOMPONENTID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c">
+                <LINE LINETYPE="VERTICAL" STARTX="485" STARTY="280" ENDX="485" ENDY="390" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="32">
+            <COMPONENT ID="a1203039-f2b4-4eaf-a8cc-8c1a5002201c" NAME="G02_Draw_PlotPartModel">
+                <LAYOUT LOCATIONX="329" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="33">
+            <COMPONENT ID="a1203039-f2b4-4eaf-a8cc-8c1a5002201c" NAME="G02_Draw_PlotPartModel">
+                <LAYOUT LOCATIONX="350" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="34">
+            <CONNECTION-MODEL ID="f7983fd2-0e0c-49ec-a3e4-43ac7672cd40" SOURCEPORTID="a92cba05-9af5-4898-813c-3bc6987062de" TARGETPORTID="in" SOURCECOMPONENTID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" TARGETCOMPONENTID="a1203039-f2b4-4eaf-a8cc-8c1a5002201c">
+                <LINE LINETYPE="VERTICAL" STARTX="325" STARTY="280" ENDX="325" ENDY="390" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="35">
+            <CONNECTION-MODEL ID="4b5523a1-cc77-423f-80bd-281f246e98e4" SOURCEPORTID="52c41dce-be3d-488c-afd6-c0069b627a73" TARGETPORTID="in" SOURCECOMPONENTID="9def354a-2619-46b2-9195-540b19c51b43" TARGETCOMPONENTID="8f502f74-ba0a-4398-8578-5c4d90947008">
+                <LINE LINETYPE="HORIZONTAL" STARTX="845" STARTY="280" ENDX="930" ENDY="280" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="36">
+            <CONNECTION-MODEL ID="34b6fa4a-fba2-41e4-b32a-5d8c8ccaeb44" SOURCEPORTID="f1adf328-bde2-4a47-9305-1c80b58ce3bf" TARGETPORTID="in" SOURCECOMPONENTID="e5d57f86-3239-470c-b6a7-524e40d07642" TARGETCOMPONENTID="9def354a-2619-46b2-9195-540b19c51b43">
+                <LINE LINETYPE="HORIZONTAL" STARTX="665" STARTY="280" ENDX="750" ENDY="280" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="37">
+            <CONNECTION-MODEL ID="f940bc05-50a7-43fb-8243-c8ba067998c7" SOURCEPORTID="eecee05b-c65c-4b9b-ad85-46255c4ebaa3" TARGETPORTID="in" SOURCECOMPONENTID="07294bb1-ce37-4bc9-a878-b370dd41aa43" TARGETCOMPONENTID="e5d57f86-3239-470c-b6a7-524e40d07642">
+                <LINE LINETYPE="HORIZONTAL" STARTX="485" STARTY="280" ENDX="570" ENDY="280" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="CREATE-CONNECTION" TIMER="38">
+            <CONNECTION-MODEL ID="eddaa8f4-2dc8-46c2-9219-c6fedc26312f" SOURCEPORTID="a92cba05-9af5-4898-813c-3bc6987062de" TARGETPORTID="in" SOURCECOMPONENTID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" TARGETCOMPONENTID="07294bb1-ce37-4bc9-a878-b370dd41aa43">
+                <LINE LINETYPE="HORIZONTAL" STARTX="325" STARTY="280" ENDX="390" ENDY="280" />
+                <LINE LINETYPE="VERTICAL" STARTX="390" STARTY="280" ENDX="390" ENDY="280" />
+            </CONNECTION-MODEL>
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="39">
+            <COMPONENT-MODEL ID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" NAME="A01_Source_CosinPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="40">
+            <COMPONENT-MODEL ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="41">
+            <COMPONENT-MODEL ID="8f502f74-ba0a-4398-8578-5c4d90947008" NAME="E03_SourceCoding_PCMDecodingPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="42">
+            <COMPONENT-MODEL ID="a1203039-f2b4-4eaf-a8cc-8c1a5002201c" NAME="G02_Draw_PlotPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="43">
+            <COMPONENT-MODEL ID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c" NAME="G04_Draw_StemPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="44">
+            <COMPONENT-MODEL ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel" />
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="45">
+            <COMPONENT ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="1050" LOCATIONY="230" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="46">
+            <COMPONENT ID="8f502f74-ba0a-4398-8578-5c4d90947008" NAME="E03_SourceCoding_PCMDecodingPartModel">
+                <LAYOUT LOCATIONX="880" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="47">
+            <COMPONENT ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="1010" LOCATIONY="230" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="48">
+            <COMPONENT ID="8f502f74-ba0a-4398-8578-5c4d90947008" NAME="E03_SourceCoding_PCMDecodingPartModel">
+                <LAYOUT LOCATIONX="840" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="49">
+            <COMPONENT ID="5e5dfc87-e48f-465b-a223-8ccc2739afb5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="830" LOCATIONY="329" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="50">
+            <COMPONENT ID="9def354a-2619-46b2-9195-540b19c51b43" NAME="E02_SourceCoding_PCMCodingPartModel">
+                <LAYOUT LOCATIONX="700" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="51">
+            <COMPONENT ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="970" LOCATIONY="230" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="52">
+            <COMPONENT ID="5e5dfc87-e48f-465b-a223-8ccc2739afb5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="780" LOCATIONY="329" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="53">
+            <COMPONENT ID="8f502f74-ba0a-4398-8578-5c4d90947008" NAME="E03_SourceCoding_PCMDecodingPartModel">
+                <LAYOUT LOCATIONX="790" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="54">
+            <COMPONENT ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="920" LOCATIONY="230" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="55">
+            <COMPONENT ID="4d709f9f-d96d-4ba7-9d40-858cea692cee" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="650" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="56">
+            <COMPONENT ID="9def354a-2619-46b2-9195-540b19c51b43" NAME="E02_SourceCoding_PCMCodingPartModel">
+                <LAYOUT LOCATIONX="650" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="57">
+            <COMPONENT ID="e5d57f86-3239-470c-b6a7-524e40d07642" NAME="E01_SourceCoding_PCMQuantizPartModel">
+                <LAYOUT LOCATIONX="510" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="58">
+            <COMPONENT ID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="510" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="59">
+            <COMPONENT ID="5e5dfc87-e48f-465b-a223-8ccc2739afb5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="750" LOCATIONY="329" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="60">
+            <COMPONENT ID="8f502f74-ba0a-4398-8578-5c4d90947008" NAME="E03_SourceCoding_PCMDecodingPartModel">
+                <LAYOUT LOCATIONX="760" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="61">
+            <COMPONENT ID="a7dfda9a-c7f6-4b20-a95c-0d8b342952a5" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="890" LOCATIONY="230" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="62">
+            <COMPONENT ID="4d709f9f-d96d-4ba7-9d40-858cea692cee" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="620" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="63">
+            <COMPONENT ID="a0338bea-e46d-435f-a01e-a0a1b8f87f0c" NAME="G04_Draw_StemPartModel">
+                <LAYOUT LOCATIONX="480" LOCATIONY="340" DIRECTION="direction right" ZOOM="1.0" HEIGHT="100" WIDTH="100" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="64">
+            <COMPONENT ID="9def354a-2619-46b2-9195-540b19c51b43" NAME="E02_SourceCoding_PCMCodingPartModel">
+                <LAYOUT LOCATIONX="620" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="65">
+            <COMPONENT ID="e5d57f86-3239-470c-b6a7-524e40d07642" NAME="E01_SourceCoding_PCMQuantizPartModel">
+                <LAYOUT LOCATIONX="480" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="COMPONENT-LAYOUT-CHANGE" TIMER="66">
+            <COMPONENT ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel">
+                <LAYOUT LOCATIONX="350" LOCATIONY="240" DIRECTION="direction right" ZOOM="1.0" HEIGHT="80" WIDTH="110" />
+            </COMPONENT>
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="67">
+            <COMPONENT-MODEL ID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" NAME="A01_Source_CosinPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="68">
+            <COMPONENT-MODEL ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="69">
+            <COMPONENT-MODEL ID="e5d57f86-3239-470c-b6a7-524e40d07642" NAME="E01_SourceCoding_PCMQuantizPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="70">
+            <COMPONENT-MODEL ID="9def354a-2619-46b2-9195-540b19c51b43" NAME="E02_SourceCoding_PCMCodingPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="71">
+            <COMPONENT-MODEL ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="72">
+            <COMPONENT-MODEL ID="c2c5c50e-a4cb-4d67-aea8-e5b17bc4b78f" NAME="A01_Source_CosinPartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="73">
+            <COMPONENT-MODEL ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel" />
+        </TRACER>
+        <TRACER TYPE="SHOW-PROPERTY" TIMER="74">
+            <COMPONENT-MODEL ID="07294bb1-ce37-4bc9-a878-b370dd41aa43" NAME="F01_ComUse_SamplePartModel" />
+        </TRACER>
+    </EXPERIMENT-REPLAY-LIST>
+</PROJECT>
+
